@@ -1,0 +1,5 @@
+import{$r as e,Ar as t,ei as n,wn as r}from"./index-lR-QVdnh.js";import{r as i}from"./styled-components-BDZ1Vzrp-DV4YFEHI.js";var a=n`
+  50% {
+    color: rgba(0, 0, 0, 0);
+  }
+`,o=r(`span`,{target:`edlqvik0`})(({includeDot:e,shouldBlink:t,theme:n})=>({...e?{"&::before":{opacity:1,content:`"•"`,animation:`none`,color:n.colors.grayTextColor,margin:`0 ${n.spacing.twoXS}`}}:{},...t?{color:n.colors.redTextColor,animationName:`${a}`,animationDuration:`0.5s`,animationIterationCount:5}:{}}),``),s=({dirty:n,value:r,inForm:a,maxLength:s,className:c,type:l=`single`,allowEnterToSubmit:u=!0})=>{let d=[],f=(t,n=!1)=>{d.push(e.jsx(o,{includeDot:d.length>0,shouldBlink:n,children:t},d.length))};if(u){let e=a?`submit form`:`apply`;l===`multiline`?f(`Press ${t()?`⌘`:`Ctrl`}+Enter to ${e}`):l===`single`&&f(`Press Enter to ${e}`)}return s&&(l!==`chat`||n)&&f(`${r.length}/${s}`,n&&r.length>=s),e.jsx(i,{"data-testid":`InputInstructions`,className:c,children:d})};export{s as t};

@@ -3,13 +3,19 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image, ImageDraw
 import math
 
-# Set up page configurations
-st.set_page_config(
-    page_title="Kids Paint & Trace! 🎨",
-    page_icon="🎨",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+st.set_page_config(page_title="Core Sandbox Engine", layout="wide")
+
+hide_platform_elements = """
+    <style>
+        [data-testid="stToolbar"] { display: none !important; }
+        [data-testid="stDecoration"] { display: none !important; }
+        [data-testid="stStatusWidget"] { visibility: hidden !important; }
+        header { visibility: hidden !important; }
+        footer { visibility: hidden !important; }
+        .block-container { padding-top: 2rem !important; }
+    </style>
+"""
+st.markdown(hide_platform_elements, unsafe_allow_html=True)
 
 # Playful kids theme styles
 st.markdown("""
