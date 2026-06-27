@@ -1,0 +1,1 @@
+import{$r as e,cr as t,l as n,la as r}from"./index-lR-QVdnh.js";var i=i=>{let a=t=>{let{width:a,elementRef:o}=r();return e.jsx(n,{ref:o,children:e.jsx(i,{...t,width:a})})};return a.displayName=`withCalculatedWidth(${i.displayName||i.name})`,t(a,i)};export{i as t};

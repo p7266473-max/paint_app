@@ -1,0 +1,6 @@
+{
+  "entrypoint": "app.py",
+  "embed": false,
+  "nodeJsWorker": false,
+  "appMenu": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "kids-paint-app",
+  "version": "1.0.0",
+  "description": "Kids Paint and Trace application",
+  "main": "./build/electron/main.js",
+  "build": {
+    "files": [
+      "build/**/*"
+    ],
+    "win": {
+      "target": [
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "scripts": {
+    "dump": "dump-stlite-desktop-artifacts",
+    "serve": "npm run dump && electron .",
+    "dist": "electron-builder"
+  },
+  "stlite": {
+    "desktop": {
+      "entrypoint": "app.py",
+      "files": [
+        "app.py"
+      ],
+      "dependencies": [
+        "streamlit-drawable-canvas-fix",
+        "Pillow"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@stlite/desktop": "latest",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1"
+  }
+}
